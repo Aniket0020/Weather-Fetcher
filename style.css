@@ -1,0 +1,79 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Beautiful gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Input and button styles */
+input[type="text"], button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather result styles */
+#weatherResult {
+    margin-top: 20px;
+}
+
+.weather-detail {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading spinner styles */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007BFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Error message styling */
+.error {
+    color: #ff0000;
+    font-weight: bold;
+}
